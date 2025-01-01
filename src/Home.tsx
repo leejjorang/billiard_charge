@@ -11,7 +11,7 @@ const Home = () => {
     total: 0,
     discount: 0,
     finalAmount: 0,
-    points: 0,
+    feeForPoints: 0,
   });
 
   const handleFinish = async (values: IForm) => {
@@ -96,7 +96,9 @@ const Home = () => {
         <p>총합: {results.total} 원</p>
         <p>할인: {results.discount} 원</p>
         <p style={{ fontWeight: "bold" }}>최종요금: {results.finalAmount} 원</p>
-        <p style={{ fontWeight: "bold" }}>포인트 적립: {results.points} 원</p>
+        <p style={{ fontWeight: "bold" }}>
+          포인트 적립용 요금: {results.feeForPoints} 원
+        </p>
       </Card>
     </Card>
   );
