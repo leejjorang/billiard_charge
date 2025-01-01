@@ -40,8 +40,6 @@ const calculate = (values: IForm) => {
   const total = finalBaseFee + beerCost + sojuCost;
   const final = finalBaseFee + beerCost + sojuCost - discount;
 
-  console.log(discount);
-
   // 포인트 적립 (현금 결제 && 낮 할인 없음)
   const feeForPoints =
     paymentMethod === "cash" && discount === 0 ? finalBaseFee : 0;
