@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Form, InputNumber, Select, Checkbox, Button, Card } from "antd";
 import calculate from "./calculate";
 import { IForm } from "./type";
